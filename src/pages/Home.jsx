@@ -5,13 +5,14 @@ import { useState } from "react";
 
 export  function Home() {
   const [mostrarResultado, setMostrarResultado]= useState(false)
-  const [feedbackNote, setFeebackNote]= useState(0)
+  const [feedbackNote, setFeedbackNote]= useState(0)
 
   function handleFeedbackButtonClick(event) {
-    const feedback = Number (event.taget.innerText)
+    const feedback = Number(event.target.innerText)
 
-    setFeebackNote(feedback)
+    setFeedbackNote(feedback)
   }
+  
 
   function handleSubmit() {
     if (feedbackNote === 0) return
